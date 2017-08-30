@@ -4,7 +4,6 @@
 
 nav {
   display: flex;
-  justify-content: flex-end;
 }
 
 nav ul {
@@ -17,14 +16,78 @@ nav ul {
   flex-wrap: wrap;
 }
 
+.wrapper {
+  width: 100%;
+}
+
+.home-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 95vh;
+}
+
 label {
   display: block;
+  width: 100%;
+  text-align: left;
+  color: #eee;
+  padding: 20px 0 5px;
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 4px;
+}
+
+.form-wrapper {
+  width: 40%;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  justify-content: center;
   align-items: center;
+  background-color: #B84E29;
+  padding: 20px 30px 30px;
+}
+
+input, textarea {
+  background-color: #DA886E;
+  border: 0;
+  padding: 10px 20px;
+  width: 90%;
+}
+
+textarea {
+  height: 250px;
+}
+
+button[type="submit"] {
+  border: 0;
+  background-color: #DA886E;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 4px;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.side-jumbotron {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../images/paper-wrap-flowers.jpg);
+  width: 60%;
+  background-attachment: fixed;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side-jumbotron h1 {
+  color: #eee;
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
 }
