@@ -8,8 +8,7 @@ export default class CreatePost extends Component {
           <div className="side-jumbotron">
             <h1>Lorem Ipsum.</h1>
           </div>
-          <div className="form-wrapper">
-            <form>
+          <form>
               <label for="author">Author Name</label>
               <input type="text" name="author"/>
               <label for="title">Blog Title</label>
@@ -17,8 +16,7 @@ export default class CreatePost extends Component {
               <label for="post">Blog Post</label>
               <textarea name="post"/>
               <button type="submit" onClick="">Post Away!</button>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     );

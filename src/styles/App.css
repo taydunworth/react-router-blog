@@ -4,6 +4,7 @@
 
 nav {
   display: flex;
+  background-color: #B84E29;
 }
 
 nav ul {
@@ -16,6 +17,12 @@ nav ul {
   flex-wrap: wrap;
 }
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -24,7 +31,7 @@ nav ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 95vh;
+  height: 98vh;
 }
 
 label {
@@ -38,16 +45,13 @@ label {
   letter-spacing: 4px;
 }
 
-.form-wrapper {
-  width: 40%;
-}
-
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #B84E29;
   padding: 20px 30px 30px;
+  width: 40%;
 }
 
 input, textarea {
