@@ -12,7 +12,7 @@ export default class ShowPost extends Component {
 }
 
 componentDidMount() {
-    let { id } = this.props.match.params
+    let {id} = this.props.match.params
     let url = `https://tiny-lasagna-server.herokuapp.com/collections/blogger/${id}`
 
     fetch(url).then(results => results.json()).then(res => {
@@ -28,7 +28,7 @@ componentDidMount() {
   render(){
     return (
       <div className="wrapper">
-        {this.state.title}
+        {this.state.blogTitle}
         {this.state.blogPost}
         {this.state.author}
       </div>

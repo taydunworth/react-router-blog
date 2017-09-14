@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 export default class BaseLayout extends Component {
   render(){
     return (
@@ -11,15 +12,13 @@ export default class BaseLayout extends Component {
             <ul>
               <li><NavLink activeClassName="active" exact to="/">Home</NavLink></li>
               <li><NavLink activeClassName="active" to="/createpost">Create Post</NavLink></li>
-              <li><NavLink activeClassName="active" to="/showallposts">Show All Posts</NavLink></li>
+              <li><NavLink activeClassName="active" to="/showpost">Show All Posts</NavLink></li>
             </ul>
           </nav>
         </header>
         <div>
           {this.props.children}
         </div>
-        <footer>
-        </footer>
       </div>
     );
   }

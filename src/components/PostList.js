@@ -15,6 +15,7 @@ componentDidMount() {
     this.setState({ postsList })
   })
 }
+
 render(){
   const postsList = this.state.postsList.map(postItem => {
     return (

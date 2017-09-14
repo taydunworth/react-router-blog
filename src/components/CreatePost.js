@@ -10,6 +10,12 @@ export default class CreatePost extends Component {
     }
   }
 
+  _change = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
   _addPost = e => {
   e.preventDefault();
   let listItem = JSON.stringify(this.state);
@@ -30,12 +36,6 @@ export default class CreatePost extends Component {
   });
 
   this.setState({authorName: '', blogTitle: '', blogPost: ''});
-}
-
-_change = e => {
-  this.setState({
-    [e.target.name]: e.target.value
-  })
 }
 
   render(){
